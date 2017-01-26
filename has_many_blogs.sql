@@ -1,3 +1,5 @@
+-- \c postgres
+
 DROP DATABASE IF EXISTS "has_many_blogs";
 DROP USER IF EXISTS "has_many_user";
 
