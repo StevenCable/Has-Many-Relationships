@@ -30,3 +30,12 @@
 -- INNER JOIN posts p ON p.id = c.posts_id
 -- WHERE p.created_at < '2015-01-01 00:00:00-10';
 --#9
+SELECT c.*, p.title as 'post_title', p.url as 'post_url', c.body as 'comment_body' 
+FROM comments c INNER JOIN posts p 
+ON p.id = c.posts_id
+WHERE p.created_at > '2015-01-01 00:00:00:-10';
+--#10
+SELECT c.*, p.title as 'post_title', p.url as 'post_url', c.body as 'comment_body'
+FROM comments c INNER JOIN posts p
+ON p.id = c.posts_id
+WHERE c.body LIKE '%USB%';
