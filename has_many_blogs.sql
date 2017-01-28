@@ -1,4 +1,4 @@
--- \c postgres
+\c steven
 
 DROP DATABASE IF EXISTS "has_many_blogs";
 DROP USER IF EXISTS "has_many_user";
@@ -6,7 +6,7 @@ DROP USER IF EXISTS "has_many_user";
 CREATE USER has_many_user;
 CREATE DATABASE has_many_blogs OWNER has_many_user;
 
--- \c has_many_user
+c has_many_user
 
 DROP TABLE IF EXISTS "users";
 CREATE TABLE users (
